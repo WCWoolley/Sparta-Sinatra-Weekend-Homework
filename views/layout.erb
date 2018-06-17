@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- <script src="/js/app.js" charset="utf-8"></script> -->
+</head>
+<body>
+
+   <%= erb(:'partials/nav', :layout => false) %>
+
+   <%= yield %>
+
+</body>
+</html>
