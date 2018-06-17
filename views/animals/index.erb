@@ -2,7 +2,7 @@
 
 <% @animals.each do |animal| %>
 <div>
-  <h3><a href="/<%= animal.id %>"><%= animal.Scientific_Animal_Name %></a></h3>
+  <h3><a href="/animals/<%= animal.id %>"><%= animal.Scientific_Animal_Name %></a></h3>
   <p><%= animal.Common_Animal_Name %></p>
 </div>
 <% end %>

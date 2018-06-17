@@ -1,8 +1,8 @@
 <h2><%= @animal.Scientific_Animal_Name %></h2>
 <h2><%= @animal.Common_Animal_Name %></h2>
-<a href="/<%= @animal.id %>/edit">edit</a>
+<a href="/animals/<%= @animal.id %>/edit">edit</a>
 
-<form action="/<%= @animal.id %>" method="post">
+<form action="/animals/<%= @animal.id %>" method="post">
   <input type="submit" value="Delete">
   <input type="hidden" name="_method" value="DELETE">
 </form>
