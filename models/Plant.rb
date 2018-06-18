@@ -1,6 +1,6 @@
 class Plant
 
-  attr_accessor :id, :Scientific_Plant_Name, :Common_Plant_Name
+  attr_accessor :id, :scientific_plant_name, :common_plant_name
 
   def self.open_connection
 
@@ -41,9 +41,9 @@ class Plant
     conn = Plant.open_connection
 
     if (!self.id)
-      sql = "INSERT INTO plant (Scientific_Plant_Name, Common_Plant_Name) VALUES ('#{ self.Scientific_Plant_Name }','#{ self.Common_Plant_Name }')"
+      sql = "INSERT INTO plant (scientific_plant_name, common_plant_name) VALUES ('#{ self.scientific_plant_name }','#{ self.common_plant_name }')"
     else
-      sql = "UPDATE plants SET Scientific_Plant_Name='#{self.Scientific_Plant_Name}', Common_Plant_Name='#{self.Common_Plant_Name}' WHERE id='#{self.id}'"
+      sql = "UPDATE plants SET scientific_plant_name='#{self.scientific_plant_name}', common_plant_name='#{self.common_plant_name}' WHERE id='#{self.id}'"
     end
 
     conn.exec(sql)
@@ -63,8 +63,8 @@ class Plant
     plant = Plant.new
 
     plant.id = animal_data['id']
-    plant.Scientific_Plant_Name = animal_data['Scientific_Plant_Name']
-    plant.Common_Plant_Name = animal_data['Common_Plant_Name']
+    plant.scientific_plant_name = animal_data['scientific_plant_name']
+    plant.common_plant_name = animal_data['common_plant_name']
 
     plant
 

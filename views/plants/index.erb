@@ -2,7 +2,7 @@
 
 <% @plants.each do |plant| %>
 <div>
-  <h3><a href="/plants/<%= plant.id %>"><%= plant.Scientific_Plant_Name %></a></h3>
-  <p><%= plant.Common_Plant_Name %></p>
+  <h3><a href="/plants/<%= plant.id %>"><%= plant.scientific_plant_name %></a></h3>
+  <p><%= plant.common_plant_name %></p>
 </div>
 <% end %>

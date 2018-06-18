@@ -42,8 +42,8 @@ class AnimalsController < Sinatra::Base
 
     animal = Animal.new
 
-    animal.Scientific_Animal_Name = params[:Scientific_Animal_Name]
-    animal.Common_Animal_Name = params[:Common_Animal_Name]
+    animal.scientific_animal_name = params[:scientific_animal_name]
+    animal.common_animal_name = params[:common_animal_name]
 
     animal.save
 
@@ -57,8 +57,8 @@ class AnimalsController < Sinatra::Base
 
     animal = Animal.find id
 
-    animal.Scientific_Animal_Name = params[:Scientific_Animal_Name]
-    animal.Common_Animal_Name = params[:Common_Animal_Name]
+    animal.scientific_animal_name = params[:scientific_animal_name]
+    animal.common_animal_name = params[:common_animal_name]
 
     animal.save
 

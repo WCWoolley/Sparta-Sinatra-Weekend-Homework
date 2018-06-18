@@ -42,8 +42,8 @@ class PlantsController < Sinatra::Base
 
     plant = Plant.new
 
-    plant.Scientific_Plant_Name = params[:Scientific_Plant_Name]
-    plant.Common_Plant_Name = params[:Common_Plant_Name]
+    plant.scientific_plant_name = params[:scientific_plant_name]
+    plant.common_plant_name = params[:common_plant_name]
 
     plant.save
 
@@ -57,8 +57,8 @@ class PlantsController < Sinatra::Base
 
     plant = Plant.find id
 
-    plant.Scientific_Plant_Name = params[:Scientific_Plant_Name]
-    plant.Common_Plant_Name = params[:Common_Plant_Name]
+    plant.scientific_plant_name = params[:scientific_plant_name]
+    plant.common_plant_name = params[:common_plant_name]
 
     plant.save
 
